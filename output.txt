@@ -1,0 +1,32 @@
+
+> wdio-cucumber-e2e-test@1.0.0 demo:debug
+> export DEBUG=N && export HEADLESS=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@demo'
+
+
+Execution of 4 workers started at 2023-09-29T05:36:23.225Z
+
+[0-0] RUNNING in chrome - file:///test/features/demo/Inventory.feature
+[0-0] 2023-09-29T05:36:25.001Z [info]: test case execution has been started
+[0-0] >> Tested by greatuser
+[0-0] >> The environment used is undefined
+[0-0] testID: undefined
+[0-0] 2023-09-29T05:36:25.512Z [info]: checking the number of product
+[0-0] >> appId: ABC123
+[0-0] PASSED in chrome - file:///test/features/demo/Inventory.feature
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 117.0.5938.92 mac os x #0-0] Running: chrome (v117.0.5938.92) on mac os x
+[chrome 117.0.5938.92 mac os x #0-0] Session ID: bb297f1bc844f02b99231d11be602212
+[chrome 117.0.5938.92 mac os x #0-0]
+[chrome 117.0.5938.92 mac os x #0-0] » /test/features/demo/Inventory.feature
+[chrome 117.0.5938.92 mac os x #0-0] Inventory Interactions
+[chrome 117.0.5938.92 mac os x #0-0] INV-TC001:Demo Inventory interactions
+[chrome 117.0.5938.92 mac os x #0-0]    ✓ Given Login to inventory web app
+[chrome 117.0.5938.92 mac os x #0-0]    ✓ Then Inventory page should have 6
+[chrome 117.0.5938.92 mac os x #0-0]
+[chrome 117.0.5938.92 mac os x #0-0] 2 passing (716ms)
+
+
+Spec Files:	 1 passed, 3 skipped, 4 total (100% completed) in 00:00:02 
+

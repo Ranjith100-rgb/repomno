@@ -1,0 +1,43 @@
+{
+  "name": "wdio-cucumber-e2e-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.ts",
+    "demo:debug": "export DEBUG=N && export HEADLESS=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@debug'",
+    "demo:test": " export DEBUG=N  && HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@demo'",
+    "smoke": "export HEADLESS=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@smoke'",
+    "allure": "node_modules/allure-commandline/bin/allure",
+    "online": "export DEBUG=N  && HEADLESS=N &&npx wdio wdio.conf.ts --cucumberOpts.tagExpression=@online"
+  },
+  "author": "Ranjith",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/supertest": "^2.0.13",
+    "@wdio/allure-reporter": "^8.16.14",
+    "@wdio/cli": "^8.16.15",
+    "@wdio/cucumber-framework": "^8.16.15",
+    "@wdio/local-runner": "^8.16.15",
+    "@wdio/selenium-standalone-service": "^8.15.0",
+    "@wdio/spec-reporter": "^8.16.12",
+    "allure-commandline": "^2.24.0",
+    "chai": "^4.3.8",
+    "chromedriver": "^117.0.3",
+    "dotenv": "^16.3.1",
+    "expect-webdriverio": "^4.4.0",
+    "selenium-standalone": "^9.1.2",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "wdio-chromedriver-service": "^8.0.0",
+    "winston": "^3.10.0"
+  },
+  "dependencies": {
+    "@types/chai": "^4.3.6",
+    "@types/node": "^20.7.0",
+    "mocker-data-generator": "^3.0.3"
+  }
+}

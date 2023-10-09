@@ -1,0 +1,6 @@
+{
+    "loginUsername":"standard_user",
+    "loginPassword": "secret_sauce",
+    "URL": "https://www.saucedemo.com/",
+    "expectedSecondHigestPrice":29.99
+}

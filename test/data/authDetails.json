@@ -1,0 +1,12 @@
+{
+    "email":"ranjith@gmail.com",
+    "details":{
+        "firstName":"Ranjith",
+        "lastName":"B",
+        "password":12345,
+        "day":15,
+        "month":"April",
+        "year":"2013"
+
+    }
+}
